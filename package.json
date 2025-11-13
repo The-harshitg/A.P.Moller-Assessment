@@ -1,0 +1,21 @@
+{
+  "name": "maersk-ai-ml-intern-assignment",
+  "version": "1.0.0",
+  "description": "GenAI-based agentic system for e-commerce data insights",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd server && nodemon index.js",
+    "client": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "setup-db": "node server/scripts/setupDatabase.js"
+  },
+  "keywords": ["genai", "ecommerce", "data-insights", "langchain", "gemini"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "nodemon": "^3.0.2"
+  }
+}
+
